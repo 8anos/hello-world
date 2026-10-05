@@ -1,0 +1,37 @@
+# Thanos Ntakos
+
+> AI-native search & growth marketer based in Zurich, Switzerland. 10+ years driving organic visibility, digital acquisition and revenue growth for Booking.com, MSC Cruises, Breitling and eDreams. Specialises in SEO, Generative Engine Optimization (GEO) and building AI tools for marketing with LLM APIs (Claude, Gemini, ChatGPT), Python and React.
+
+Website: https://thanos.cv/
+LinkedIn: https://www.linkedin.com/in/thanosntakos/
+Email: thanos.ntakos@gmail.com
+Languages: Greek (native), English (C1), Spanish (A1)
+
+## Experience
+
+- Booking.com — B2B Marketing Expert, Digital Marketing (Nov 2025 – present, Amsterdam). Scales global B2B activation with Claude, Gemini and ChatGPT. Built a custom AI-powered search optimization tool (Python, Claude API, React) automating keyword clustering, content briefs, compliance checks and multilingual SEO content across 20+ markets. Tableau/Looker dashboards with ML models for ranking opportunities and content decay.
+- MSC Cruises — Digital Acquisition & Digital Sales Manager (Jan 2024 – Apr 2025, Geneva). +25% online bookings YoY via integrated paid and organic search. Pioneered GEO: researched LLM citation patterns and optimized content for AI answer engines. UX/CRO sprints cut bounce rate by 30%. Python automation for technical SEO. Led a hybrid team including a 10-FTE agency.
+- Breitling — Global Paid Search & Programmatic Strategist (Mar 2021 – Dec 2023, Zurich). +40% online sales YoY; −25% CPC while lifting organic visibility, CTR and ROAS; +15% CTR; owned Shopping and product feeds.
+- Booking.com — Performance Marketing / Paid Search Expert (Jun 2019 – Feb 2021, Amsterdam). Scaled search across 20+ markets incl. the US; +15% engagement from A/B and geo-lift experiments; SQL (BigQuery) and Looker reporting.
+- eDreams — Performance Marketing Specialist (Jun 2017 – May 2019, Barcelona). +18% ROI in 6 months, +22% CTR, +12–15% peak bookings, +8% CVR.
+
+## Things he builds with AI
+
+- AI Search Optimization Engine (Python, Claude API, React): keyword clustering, content briefs, compliance checking and multilingual SEO content for 20+ markets.
+- GEO research: how answer engines select and cite sources.
+- Technical SEO automation: Python scripts and AI-assisted workflows for audits, crawl monitoring and reporting.
+- Organic intelligence dashboards with ML (Tableau, Looker).
+- Campaign Architect: a Claude Skill that turns a brief into a search campaign (clusters, ad groups, RSAs with brand compliance).
+- thanos.cv: this site, featuring an AI twin built on the Claude API.
+
+## Skills & tools
+
+SEO, GEO / LLM optimization, technical SEO, content strategy, generative AI tools, AI API development, Python, SQL, marketing automation, web analytics, Google Ads / SA360, team and agency leadership, stakeholder management.
+Tools: Claude, Gemini, ChatGPT, SEMrush, Ahrefs, Screaming Frog, Sistrix, Searchmetrics, Google Search Console, Adobe Analytics, Google Ads, BigQuery, Looker, Tableau, Decibel, Cursor, VS Code, GitHub, Vercel.
+
+## Education
+
+- MSc Entrepreneurship — GBS Barcelona (2016–2017)
+- Postgraduate Diploma, Marketing Management — University of Surrey (2010–2011)
+- BSc Computer Information Systems — American College of Greece (2003–2008)
+- In progress: Microsoft AI Product Manager; Generative AI Strategic Leader (Vanderbilt); Generative AI for Growth Marketing (IBM)

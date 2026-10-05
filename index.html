@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Thanos Ntakos — AI Search, GEO &amp; Growth | thanos.cv</title>
+    <meta
+      name="description"
+      content="Thanos Ntakos is an AI-native search & growth marketer: 10+ years scaling acquisition for Booking.com, MSC Cruises, Breitling and eDreams, now building AI tools for SEO and Generative Engine Optimization (GEO). Ask his AI twin anything."
+    />
+    <link rel="canonical" href="https://thanos.cv/" />
+    <meta name="author" content="Thanos Ntakos" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#05070d" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="thanos.cv" />
+    <meta property="og:url" content="https://thanos.cv/" />
+    <meta property="og:title" content="Thanos Ntakos — making brands findable by people and AI" />
+    <meta
+      property="og:description"
+      content="AI-native search & growth marketer. SEO, GEO and AI tooling across 20+ markets. Meet his 3D AI twin — it's funnier than his CV."
+    />
+    <meta property="og:image" content="https://thanos.cv/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="thanos.cv — a glowing AI orb with two eyes next to the words: making brands findable by people and AI." />
+    <meta property="profile:first_name" content="Thanos" />
+    <meta property="profile:last_name" content="Ntakos" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Thanos Ntakos — AI Search, GEO & Growth" />
+    <meta name="twitter:description" content="Making brands findable by people and by the AIs they ask. Meet the AI twin." />
+    <meta name="twitter:image" content="https://thanos.cv/og.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://thanos.cv/#page",
+            "url": "https://thanos.cv/",
+            "name": "Thanos Ntakos — AI Search, GEO & Growth",
+            "inLanguage": "en",
+            "mainEntity": { "@id": "https://thanos.cv/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://thanos.cv/#person",
+            "name": "Thanos Ntakos",
+            "url": "https://thanos.cv/",
+            "image": "https://thanos.cv/og.png",
+            "jobTitle": "B2B Marketing Expert, Digital Marketing",
+            "worksFor": { "@type": "Organization", "name": "Booking.com", "url": "https://www.booking.com" },
+            "description": "AI-native search and growth marketer with 10+ years in SEO, Generative Engine Optimization (GEO), paid search and AI-powered marketing tooling.",
+            "email": "mailto:thanos.ntakos@gmail.com",
+            "nationality": "Greek",
+            "homeLocation": { "@type": "Place", "name": "Zurich, Switzerland" },
+            "knowsLanguage": ["el", "en", "es"],
+            "knowsAbout": [
+              "Search Engine Optimization",
+              "Generative Engine Optimization",
+              "LLM optimization",
+              "Generative AI",
+              "Claude API",
+              "Technical SEO",
+              "Content strategy",
+              "Paid search",
+              "Conversion rate optimization",
+              "Marketing automation",
+              "Python",
+              "SQL",
+              "Web analytics"
+            ],
+            "alumniOf": [
+              { "@type": "CollegeOrUniversity", "name": "GBS Barcelona" },
+              { "@type": "CollegeOrUniversity", "name": "University of Surrey" },
+              { "@type": "CollegeOrUniversity", "name": "American College of Greece" }
+            ],
+            "sameAs": ["https://www.linkedin.com/in/thanosntakos/"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://thanos.cv/#website",
+            "url": "https://thanos.cv/",
+            "name": "thanos.cv",
+            "publisher": { "@id": "https://thanos.cv/#person" }
+          }
+        ]
+      }
+    </script>
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Ambient background -->
+    <div class="bg" aria-hidden="true">
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__grid"></div>
+      <div class="bg__grain"></div>
+    </div>
+
+    <!-- The 3D entity lives here and flies between anchors -->
+    <canvas id="entity" class="entity-canvas" aria-hidden="true"></canvas>
+
+    <header class="nav" id="nav">
+      <div class="nav__inner container">
+        <a href="#top" class="nav__logo" aria-label="thanos.cv home">
+          <span class="nav__logo-orb" aria-hidden="true"><i></i><i></i></span>
+          <span>thanos<span class="accent">.cv</span></span>
+        </a>
+        <nav class="nav__links" aria-label="Sections">
+          <a href="#lab">Lab</a>
+          <a href="#benchmarks">Benchmarks</a>
+          <a href="#log">Training log</a>
+          <a href="#model-card">Model card</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <button class="kbd-btn" type="button" data-open-palette aria-label="Open command palette">
+            <kbd data-mod-key>⌘</kbd><kbd>K</kbd>
+          </button>
+          <button class="btn btn--small btn--glow" type="button" data-open-chat>
+            <span class="btn__dot" aria-hidden="true"></span> Ask Thanos
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal data-snap>
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Thanos Ntakos · Search × Generative AI
+          </p>
+          <h1 id="hero-title" class="hero__title" data-reveal data-snap style="--d: 80ms">
+            I make brands <em class="serif" data-scramble>findable</em> — by people, and by the AIs they ask.
+          </h1>
+          <p class="hero__lede" data-reveal data-snap style="--d: 160ms">
+            Search &amp; growth marketer turned AI builder. A decade scaling acquisition for
+            <strong>Booking.com</strong>, <strong>MSC Cruises</strong>, <strong>Breitling</strong> and
+            <strong>eDreams</strong>. Now building AI tools that do the heavy lifting of search, across 20+ markets.
+          </p>
+          <div class="hero__ctas" data-reveal data-snap style="--d: 240ms">
+            <button class="btn btn--primary" type="button" data-open-chat>
+              Talk to my AI twin
+              <span aria-hidden="true" class="btn__arrow">→</span>
+            </button>
+            <a class="btn btn--ghost" href="#lab">See what I'm building</a>
+          </div>
+          <div class="hero__chips" data-reveal data-snap style="--d: 320ms" aria-label="Suggested questions for the AI twin">
+            <button type="button" class="chip" data-ask="What is Thanos building with AI?">What is he building with AI?</button>
+            <button type="button" class="chip" data-ask="Explain GEO like I'm five.">Explain GEO like I'm five</button>
+            <button type="button" class="chip" data-ask="Tell me a joke about SEO.">Tell me an SEO joke</button>
+            <button type="button" class="chip" data-ask="Wait… are you THAT Thanos?">Are you <em>that</em> Thanos?</button>
+          </div>
+          <dl class="hero__stats" data-reveal data-snap style="--d: 400ms">
+            <div><dt>Years in search</dt><dd><span data-count="10">10</span>+</dd></div>
+            <div><dt>Markets</dt><dd><span data-count="20">20</span>+</dd></div>
+            <div><dt>Best YoY online sales</dt><dd>+<span data-count="40">40</span>%</dd></div>
+            <div><dt>Curiosity</dt><dd>∞</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__stage">
+          <button class="orb-anchor" type="button" data-orb-anchor="hero" data-open-chat aria-label="Open chat with Thanos, the AI twin">
+            <span class="orb-fallback" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <p class="speech" id="speech" aria-live="polite"></p>
+          <p class="hero__caption">
+            <span aria-hidden="true">↑</span> This is Thanos too. The digital one: smaller ego, bigger context window.
+          </p>
+        </div>
+      </section>
+
+      <!-- TOOL MARQUEE -->
+      <div class="marquee" aria-label="Tools I use" data-snap>
+        <div class="marquee__track">
+          <ul>
+            <li>Claude</li><li>Claude API</li><li>Gemini</li><li>ChatGPT</li><li>Python</li><li>React</li><li>Cursor</li><li>VS Code</li><li>GitHub</li><li>Vercel</li><li>SEMrush</li><li>Ahrefs</li><li>Screaming Frog</li><li>Sistrix</li><li>Search Console</li><li>BigQuery</li><li>SQL</li><li>Looker</li><li>Tableau</li><li>Adobe Analytics</li><li>Google Ads</li><li>SA360</li>
+          </ul>
+          <ul aria-hidden="true">
+            <li>Claude</li><li>Claude API</li><li>Gemini</li><li>ChatGPT</li><li>Python</li><li>React</li><li>Cursor</li><li>VS Code</li><li>GitHub</li><li>Vercel</li><li>SEMrush</li><li>Ahrefs</li><li>Screaming Frog</li><li>Sistrix</li><li>Search Console</li><li>BigQuery</li><li>SQL</li><li>Looker</li><li>Tableau</li><li>Adobe Analytics</li><li>Google Ads</li><li>SA360</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- THE SHIFT -->
+      <section class="section container" id="shift" aria-labelledby="shift-title">
+        <p class="label" data-reveal><span>01</span> The shift</p>
+        <h2 id="shift-title" class="section__title" data-reveal>
+          Ten blue links became one AI answer. <span class="dim">The game changed. I'm playing the new one.</span>
+        </h2>
+        <div class="pillars">
+          <article class="card pillar" data-reveal data-snap>
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 12h6m4 0h6M12 4v6m0 4v6" /><circle cx="12" cy="12" r="2.2" /></svg>
+            </div>
+            <h3>SEO <span class="arrow">→</span> GEO</h3>
+            <p>
+              Rankings still matter. But answer engines like ChatGPT, Gemini, Claude and Perplexity now decide who gets
+              cited. I study how they pick sources and shape content to be the one they quote.
+            </p>
+          </article>
+          <article class="card pillar" data-reveal data-snap style="--d: 90ms">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" /></svg>
+            </div>
+            <h3>Built with AI, not just using it</h3>
+            <p>
+              Python, Claude API and React tools that cluster keywords, write briefs, check compliance and localize
+              content for 20+ markets. Robots do the repetitive work; people do the thinking.
+            </p>
+          </article>
+          <article class="card pillar" data-reveal data-snap style="--d: 180ms">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 20h18M6 16l4-5 3 3 5-7" /><circle cx="18" cy="7" r="1.6" /></svg>
+            </div>
+            <h3>Performance DNA</h3>
+            <p>
+              Ten years of paid search, CRO and analytics means every idea meets a number. If it doesn't move bookings,
+              sales or ROAS, it's a hobby. (I have hobbies too. They're also measured.)
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <div class="meander container" aria-hidden="true"></div>
+
+      <!-- THE LAB -->
+      <section class="section container" id="lab" aria-labelledby="lab-title">
+        <p class="label" data-reveal><span>02</span> The Lab</p>
+        <h2 id="lab-title" class="section__title" data-reveal>
+          Things I build with AI. <span class="dim">Mostly so nobody has to do the boring parts twice.</span>
+        </h2>
+
+        <div class="bento">
+          <article class="card lab lab--feature" data-reveal data-snap>
+            <header class="lab__head">
+              <span class="status status--live">In production</span>
+              <span class="lab__stack">Python · Claude API · React</span>
+            </header>
+            <h3>AI Search Optimization Engine</h3>
+            <p>
+              A custom tool that automates keyword clustering, content brief generation, compliance checking and
+              multilingual SEO content creation, across <strong>20+ markets</strong>.
+            </p>
+            <ul class="features">
+              <li><b>Keyword clustering</b><span>by search intent, powered by Claude</span></li>
+              <li><b>Content briefs</b><span>one per cluster, on-brand by default</span></li>
+              <li><b>Compliance checks</b><span>brand &amp; legal rules built in</span></li>
+              <li><b>Multilingual SEO</b><span>localized for 20+ markets</span></li>
+            </ul>
+            <div class="terminal" data-terminal="engine" role="img" aria-label="Illustrative terminal run of the AI search optimization engine">
+              <div class="terminal__bar"><i></i><i></i><i></i><span>illustrative run</span></div>
+              <pre class="terminal__body"></pre>
+            </div>
+          </article>
+
+          <article class="card lab lab--geo" data-reveal data-snap style="--d: 80ms">
+            <header class="lab__head">
+              <span class="status">Research</span>
+              <span class="lab__stack">LLMs · Content · Schema</span>
+            </header>
+            <h3>GEO Lab: getting cited by AI</h3>
+            <p>How answer engines choose their sources, and how to become the one they quote.</p>
+            <div class="answer" aria-hidden="true">
+              <p class="answer__q">best family cruise in the Mediterranean?</p>
+              <p class="answer__a">
+                <span class="answer__line"></span><span class="answer__line answer__line--short"></span>
+                <span class="answer__cite">[1] yourbrand.com</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="card lab" data-reveal data-snap style="--d: 120ms">
+            <header class="lab__head">
+              <span class="status">Automation</span>
+              <span class="lab__stack">Python · Crawlers</span>
+            </header>
+            <h3>Technical SEO autopilot</h3>
+            <p>Scripts and AI-assisted workflows for audits, crawlability monitoring and performance reporting.</p>
+            <div class="terminal terminal--mini" data-terminal="audit" role="img" aria-label="Illustrative terminal run of a technical SEO audit">
+              <pre class="terminal__body"></pre>
+            </div>
+          </article>
+
+          <article class="card lab" data-reveal data-snap style="--d: 160ms">
+            <header class="lab__head">
+              <span class="status">Intelligence</span>
+              <span class="lab__stack">Tableau · Looker · ML</span>
+            </header>
+            <h3>Organic intelligence dashboards</h3>
+            <p>ML models that flag ranking opportunities, content decay and competitive shifts before anyone has to ask.</p>
+            <svg class="spark" viewBox="0 0 300 80" aria-hidden="true">
+              <defs>
+                <linearGradient id="sparkFill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#5cd6ff" stop-opacity=".35" />
+                  <stop offset="1" stop-color="#5cd6ff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path class="spark__area" d="M0 62 L30 58 L60 60 L90 48 L120 50 L150 38 L180 41 L210 26 L240 30 L270 14 L300 10 L300 80 L0 80 Z" fill="url(#sparkFill)" />
+              <path class="spark__line" d="M0 62 L30 58 L60 60 L90 48 L120 50 L150 38 L180 41 L210 26 L240 30 L270 14 L300 10" />
+              <circle class="spark__dot" cx="300" cy="10" r="4" />
+            </svg>
+            <span class="pill pill--warn" aria-hidden="true">⚠ content decay: /guides/… (−18% clicks)</span>
+          </article>
+
+          <article class="card lab" data-reveal data-snap style="--d: 200ms">
+            <header class="lab__head">
+              <span class="status">Claude Skill</span>
+              <span class="lab__stack">Claude · Google Ads</span>
+            </header>
+            <h3>Campaign Architect</h3>
+            <p>
+              A packaged Claude Skill that turns a brief into a search campaign: keyword clustering, ad-group theming,
+              RSA copywriting with brand compliance, Editor-ready output.
+            </p>
+            <ol class="flow" aria-hidden="true">
+              <li>brief</li><li>clusters</li><li>ad groups</li><li>RSAs</li><li>✓ export</li>
+            </ol>
+          </article>
+
+          <article class="card lab lab--meta" data-reveal data-snap style="--d: 240ms">
+            <header class="lab__head">
+              <span class="status status--live">You are here</span>
+              <span class="lab__stack">Claude API · Three.js · TS</span>
+            </header>
+            <h3>thanos.cv</h3>
+            <p>
+              An AI twin that knows my career better than I do, a 3D entity with opinions, and SEO/GEO done properly.
+              Yes, there's an <a href="/llms.txt">llms.txt</a>.
+            </p>
+            <button class="btn btn--small btn--ghost" type="button" data-open-chat>Say hi to it →</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- BENCHMARKS -->
+      <section class="section container" id="benchmarks" aria-labelledby="bench-title">
+        <p class="label" data-reveal><span>03</span> Benchmarks</p>
+        <h2 id="bench-title" class="section__title" data-reveal>
+          Evaluated in production. <span class="dim">Real budgets, real markets, real revenue.</span>
+        </h2>
+
+        <div class="bench card" data-reveal>
+          <div class="bench__legend">
+            <span><i class="sw sw--me"></i> Result achieved with my teams</span>
+            <span class="bench__note">YoY or vs. baseline · higher bar = bigger move</span>
+          </div>
+          <ul class="bench__rows">
+            <li class="bench__row" data-snap style="--v: 1">
+              <span class="bench__metric"><b>+40%</b> online sales YoY</span>
+              <span class="bench__bar"><i></i></span>
+              <span class="bench__who">Breitling</span>
+            </li>
+            <li class="bench__row" data-snap style="--v: 0.625">
+              <span class="bench__metric"><b>+25%</b> online bookings YoY</span>
+              <span class="bench__bar"><i></i></span>
+              <span class="bench__who">MSC Cruises</span>
+            </li>
+            <li class="bench__row bench__row--down" data-snap style="--v: 0.75">
+              <span class="bench__metric"><b>−30%</b> bounce rate</span>
+              <span class="bench__bar"><i></i></span>
+              <span class="bench__who">MSC Cruises</span>
+            </li>
+            <li class="bench__row bench__row--down" data-snap style="--v: 0.625">
+              <span class="bench__metric"><b>−25%</b> cost per click</span>
+              <span class="bench__bar"><i></i></span>
+              <span class="bench__who">Breitling</span>
+            </li>
+            <li class="bench__row" data-snap style="--v: 0.55">
+              <span class="bench__metric"><b>+22%</b> CTR</span>
+              <span class="bench__bar"><i></i></span>
+              <span class="bench__who">eDreams</span>
+            </li>
+            <li class="bench__row" data-snap style="--v: 0.45">
+              <span class="bench__metric"><b>+18%</b> ROI in 6 months</span>
+              <span class="bench__bar"><i></i></span>
+              <span class="bench__who">eDreams</span>
+            </li>
+            <li class="bench__row" data-snap style="--v: 0.375">
+              <span class="bench__metric"><b>+15%</b> engagement</span>
+              <span class="bench__bar"><i></i></span>
+              <span class="bench__who">Booking.com</span>
+            </li>
+          </ul>
+          <p class="bench__foot">
+            No cherry-picking. Okay, a little. It's a CV. Every number was a team effort with brilliant people in
+            product, engineering, data and creative.
+          </p>
+        </div>
+      </section>
+
+      <div class="meander container" aria-hidden="true"></div>
+
+      <!-- TRAINING LOG -->
+      <section class="section container" id="log" aria-labelledby="log-title">
+        <p class="label" data-reveal><span>04</span> Training log</p>
+        <h2 id="log-title" class="section__title" data-reveal>
+          A decade of training data. <span class="dim">Five companies, four countries, zero boring quarters.</span>
+        </h2>
+
+        <ol class="timeline">
+          <li class="epoch" data-reveal data-snap>
+            <div class="epoch__meta">
+              <span class="epoch__tag">epoch 05 · current</span>
+              <time>Nov 2025 — now</time>
+              <span>Amsterdam</span>
+            </div>
+            <div class="epoch__body card">
+              <h3>B2B Marketing Expert, Digital Marketing <span class="at">@ Booking.com</span></h3>
+              <ul>
+                <li>Scaling global B2B activation with <strong>Claude, Gemini &amp; ChatGPT</strong>: keyword research, content gaps, audience segmentation, multi-market production.</li>
+                <li>Built a custom <strong>AI search-optimization tool</strong> (Python, Claude API, React) for clustering, briefs, compliance and multilingual SEO across 20+ markets.</li>
+                <li>Organic performance dashboards in Tableau &amp; Looker with ML-surfaced ranking opportunities and content-decay signals.</li>
+                <li>Prototyping and shipping internal automation with VS Code, Cursor, GitHub &amp; Vercel.</li>
+              </ul>
+              <p class="epoch__aside">Boomerang hire: second tour at Booking.com. Even great models get redeployed.</p>
+            </div>
+          </li>
+          <li class="epoch" data-reveal data-snap>
+            <div class="epoch__meta">
+              <span class="epoch__tag">epoch 04</span>
+              <time>Jan 2024 — Apr 2025</time>
+              <span>Geneva</span>
+            </div>
+            <div class="epoch__body card">
+              <h3>Digital Acquisition &amp; Digital Sales Manager <span class="at">@ MSC Cruises</span></h3>
+              <ul>
+                <li><strong>+25% online bookings YoY</strong> globally through integrated paid &amp; organic search.</li>
+                <li>Pioneered <strong>GEO</strong>: researched LLM citation patterns and optimized for AI answer engines.</li>
+                <li>UX/CRO sprints with Product &amp; Engineering: <strong>−30% bounce rate</strong>, higher CVR.</li>
+                <li>Python automation for technical SEO audits; led a hybrid team including a 10-FTE agency.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="epoch" data-reveal data-snap>
+            <div class="epoch__meta">
+              <span class="epoch__tag">epoch 03</span>
+              <time>Mar 2021 — Dec 2023</time>
+              <span>Zurich</span>
+            </div>
+            <div class="epoch__body card">
+              <h3>Global Paid Search &amp; Programmatic Strategist <span class="at">@ Breitling</span></h3>
+              <ul>
+                <li>Multi-market search strategy across paid and organic: <strong>+40% online sales YoY</strong>.</li>
+                <li><strong>−25% CPC</strong> while lifting organic visibility, CTR and ROAS; <strong>+15% CTR</strong> across channels.</li>
+                <li>Owned Shopping &amp; product feeds end to end: Merchant Center, brand safety, retailers.</li>
+                <li>Systematic A/B testing on ads, landing pages and on-site content.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="epoch" data-reveal data-snap>
+            <div class="epoch__meta">
+              <span class="epoch__tag">epoch 02</span>
+              <time>Jun 2019 — Feb 2021</time>
+              <span>Amsterdam</span>
+            </div>
+            <div class="epoch__body card">
+              <h3>Performance Marketing / Paid Search Expert <span class="at">@ Booking.com</span></h3>
+              <ul>
+                <li>Scaled search across <strong>20+ core markets</strong> incl. the US, holding CPA on target and lifting ROAS.</li>
+                <li>A/B and geo-lift experiments: <strong>+15% engagement</strong> and incremental bookings.</li>
+                <li>Automation for campaign builds, QA and audits; SQL in BigQuery and Looker dashboards.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="epoch" data-reveal data-snap>
+            <div class="epoch__meta">
+              <span class="epoch__tag">epoch 01</span>
+              <time>Jun 2017 — May 2019</time>
+              <span>Barcelona</span>
+            </div>
+            <div class="epoch__body card">
+              <h3>Performance Marketing Specialist <span class="at">@ eDreams</span></h3>
+              <ul>
+                <li><strong>+18% ROI</strong> and smoother budget pacing within 6 months.</li>
+                <li>Search-behaviour segmentation &amp; remarketing: <strong>+22% CTR</strong>.</li>
+                <li>Seasonal campaigns: <strong>+12–15% bookings</strong> at peak; A/B testing for <strong>+8% CVR</strong>.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="epoch epoch--pre" data-reveal data-snap>
+            <div class="epoch__meta">
+              <span class="epoch__tag">pre-training</span>
+              <time>2003 — 2017</time>
+              <span>Athens · Guildford · Barcelona</span>
+            </div>
+            <div class="epoch__body card">
+              <h3>Education</h3>
+              <ul class="edu">
+                <li><strong>MSc Entrepreneurship</strong> <span>GBS Barcelona · 2016–17</span></li>
+                <li><strong>PG Diploma, Marketing Management</strong> <span>University of Surrey · 2010–11</span></li>
+                <li><strong>BSc Computer Information Systems</strong> <span>American College of Greece · 2003–08</span></li>
+              </ul>
+              <p class="epoch__aside">Yes, technical before marketing was cool.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- MODEL CARD -->
+      <section class="section container" id="model-card" aria-labelledby="mc-title">
+        <p class="label" data-reveal><span>05</span> Model card</p>
+        <h2 id="mc-title" class="section__title" data-reveal>
+          Specs, capabilities &amp; known limitations. <span class="dim">Every good model ships with one.</span>
+        </h2>
+
+        <div class="modelcard card" data-reveal>
+          <header class="modelcard__head">
+            <div>
+              <p class="modelcard__repo"><span class="dim">thanos-ntakos /</span> search-ai-v10</p>
+              <ul class="tags" aria-label="Tags">
+                <li>search</li><li>geo</li><li>generative-ai</li><li>python</li><li>multilingual*</li><li>human</li>
+              </ul>
+            </div>
+            <a class="btn btn--small btn--ghost" href="#contact">Request access →</a>
+          </header>
+
+          <div class="modelcard__grid">
+            <dl class="specs">
+              <div data-snap><dt>Architecture</dt><dd>Marketer × engineer hybrid. BSc in Computer Information Systems, raised in performance marketing.</dd></div>
+              <div data-snap><dt>Training data</dt><dd>10+ years · travel, cruises, luxury watches, B2B · 5 companies, 4 countries.</dd></div>
+              <div data-snap><dt>Context window</dt><dd>20+ markets, simultaneously.</dd></div>
+              <div data-snap><dt>Languages</dt><dd>Greek (native) · English (C1) · Spanish (A1, orders tapas with confidence).</dd></div>
+              <div data-snap><dt>Inference stack</dt><dd>Claude · Gemini · ChatGPT · Python · SQL · Cursor · VS Code · GitHub · Vercel</dd></div>
+              <div data-snap><dt>Search toolkit</dt><dd>SEMrush · Ahrefs · Screaming Frog · Sistrix · Searchmetrics · Search Console · Adobe Analytics · Google Ads · SA360 · BigQuery · Looker · Tableau · Decibel</dd></div>
+              <div data-snap><dt>Currently fine-tuning</dt><dd>Microsoft AI Product Manager · Generative AI Strategic Leader (Vanderbilt) · Generative AI for Growth Marketing (IBM) <span class="status status--wip">in progress</span></dd></div>
+              <div data-snap><dt>Intended use</dt><dd>Organic &amp; AI-search growth, GEO strategy, AI tooling for marketing teams, cross-functional leadership.</dd></div>
+              <div data-snap><dt>Out-of-scope use</dt><dd>Fixing your printer. Explaining why your cousin's website doesn't rank (okay, maybe that one).</dd></div>
+              <div data-snap><dt>Known limitations</dt><dd>Cannot resist A/B testing things. Will mention GEO at dinner parties. Spanish ends at "una cerveza, por favor".</dd></div>
+              <div data-snap><dt>Alignment</dt><dd>Helpful, honest and harmless. Except to wasted ad spend.</dd></div>
+            </dl>
+
+            <div class="capabilities">
+              <h3 class="capabilities__title">Capability evals</h3>
+              <ul class="caps">
+                <li data-snap><span>AI API development</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>GEO / LLM optimization</span><b class="lvl">Professional</b></li>
+                <li data-snap><span>Generative AI tools</span><b class="lvl">Professional</b></li>
+                <li data-snap><span>SEO &amp; on-page</span><b class="lvl">Professional</b></li>
+                <li data-snap><span>Technical SEO</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>Content strategy</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>Python / vibe coding</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>Data analytics (SQL)</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>Marketing automation</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>Web analytics &amp; reporting</span><b class="lvl">Professional</b></li>
+                <li data-snap><span>Google Ads / SA360</span><b class="lvl">Professional</b></li>
+                <li data-snap><span>HTML / CSS / JavaScript</span><b class="lvl lvl--work">Working knowledge</b></li>
+                <li data-snap><span>Team leadership</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>Stakeholder management</span><b class="lvl lvl--adv">Advanced</b></li>
+                <li data-snap><span>Agency management</span><b class="lvl">Professional</b></li>
+              </ul>
+              <p class="strengths">
+                <span>Analytical</span><span>Strategic</span><span>Creative</span><span>Collaborative</span><span>Problem solver</span><span>Team builder</span><span>Empathetic</span><span>Adaptable</span><span>Results-oriented</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="meander container" aria-hidden="true"></div>
+
+      <!-- CONTACT -->
+      <section class="section contact container" id="contact" aria-labelledby="contact-title">
+        <p class="label" data-reveal><span>06</span> Handshake</p>
+        <h2 id="contact-title" class="contact__title" data-reveal data-snap>
+          Let's make something <em class="serif">findable.</em>
+        </h2>
+        <p class="contact__lede" data-reveal data-snap>
+          Open to interesting conversations about AI search, GEO, growth and building things with AI. Coffee in Zurich
+          or Amsterdam, or a call anywhere.
+        </p>
+        <div class="contact__actions" data-reveal>
+          <a class="btn btn--primary" href="mailto:thanos.ntakos@gmail.com" data-email>
+            thanos.ntakos@gmail.com
+          </a>
+          <button class="btn btn--ghost" type="button" data-copy-email aria-label="Copy email address">Copy email</button>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/thanosntakos/" target="_blank" rel="noopener me">LinkedIn ↗</a>
+          <button class="btn btn--ghost" type="button" data-open-chat>Interview my AI twin first</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span data-year>2026</span> Thanos Ntakos · Built with Claude, Three.js &amp; too much espresso.</p>
+      <p class="footer__joke">No Titans were harmed in the making of this website.</p>
+      <p class="footer__hint">Press <kbd data-mod-key>⌘</kbd><kbd>K</kbd> for shortcuts. Or type “snap”.</p>
+    </footer>
+
+    <!-- Corner launcher: the entity docks here while you scroll -->
+    <button class="dock" type="button" data-orb-anchor="dock" data-open-chat aria-label="Open chat with Thanos, the AI twin">
+      <span class="orb-fallback" aria-hidden="true"><i></i><i></i></span>
+      <span class="dock__label">Ask me anything</span>
+    </button>
+
+    <!-- Chat -->
+    <section class="chat" id="chat" role="dialog" aria-modal="false" aria-labelledby="chat-title" hidden>
+      <header class="chat__head">
+        <div class="chat__avatar" data-orb-anchor="chat"><span class="orb-fallback" aria-hidden="true"><i></i><i></i></span></div>
+        <div class="chat__who">
+          <h2 id="chat-title">Thanos <span class="chat__badge">AI twin</span></h2>
+          <p class="chat__status"><span class="chat__status-dot" aria-hidden="true"></span><span id="chat-status">Online · mildly caffeinated</span></p>
+        </div>
+        <button class="icon-btn" type="button" data-chat-reset aria-label="Start a new conversation" title="New conversation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4" /></svg>
+        </button>
+        <button class="icon-btn" type="button" data-chat-close aria-label="Close chat" title="Close (Esc)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </header>
+      <div class="chat__log" id="chat-log" role="log" aria-live="polite" aria-relevant="additions"></div>
+      <div class="chat__suggest" id="chat-suggest"></div>
+      <form class="chat__form" id="chat-form">
+        <label class="sr-only" for="chat-input">Message Thanos's AI twin</label>
+        <textarea id="chat-input" rows="1" maxlength="600" placeholder="Ask about AI, GEO, his career, or a joke…" autocomplete="off"></textarea>
+        <button class="chat__send" type="submit" aria-label="Send message">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" /></svg>
+        </button>
+      </form>
+      <p class="chat__fine">AI twin: may hallucinate charmingly. For anything important, email the human.</p>
+    </section>
+
+    <!-- Command palette -->
+    <div class="palette" id="palette" hidden>
+      <div class="palette__backdrop" data-palette-close></div>
+      <div class="palette__panel" role="dialog" aria-modal="true" aria-label="Command palette">
+        <div class="palette__search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+          <input id="palette-input" type="text" placeholder="Type a command, or ask the AI anything…" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="palette-list" />
+          <kbd>esc</kbd>
+        </div>
+        <ul class="palette__list" id="palette-list" role="listbox"></ul>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <!-- SVG filter used by the snap easter egg -->
+    <svg class="sr-only" aria-hidden="true" focusable="false">
+      <filter id="dust" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </svg>
+
+    <noscript>
+      <style>[data-reveal]{opacity:1!important;transform:none!important;filter:none!important}</style>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
