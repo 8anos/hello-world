@@ -2,8 +2,8 @@ import Anthropic from '@anthropic-ai/sdk';
 import { ERROR_LINES, SYSTEM_PROMPT } from './_knowledge';
 
 /**
- * POST /api/chat — streams the AI twin's reply as plain text.
- * GET  /api/chat — tells the page whether the live brain is configured.
+ * POST /api/chat: streams the AI twin's reply as plain text.
+ * GET  /api/chat: tells the page whether the live brain is configured.
  *
  * Body: { messages: [{ role: "user" | "assistant", content: string }, ...] } (last one from the user)
  * Without ANTHROPIC_API_KEY it answers 503 and the page falls back to its offline brain.

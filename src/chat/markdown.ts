@@ -18,7 +18,7 @@ function inline(text: string): string {
 }
 
 export function renderMarkdown(source: string): string {
-  const lines = source.replace(/\r/g, '').split('\n');
+  const lines = source.replace(/\r/g, '').replace(/\s*—\s*/g, ', ').split('\n');
   const html: string[] = [];
   let para: string[] = [];
   let list: string[] = [];

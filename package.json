@@ -2,7 +2,7 @@
   "name": "thanos-cv",
   "private": true,
   "version": "1.0.0",
-  "description": "thanos.cv — personal site of Thanos Ntakos, with a 3D AI twin that answers questions.",
+  "description": "thanos.cv: personal site of Thanos Ntakos, with a 3D AI twin that answers questions.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && tsc --noEmit -p api && vite build",
